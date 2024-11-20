@@ -10,8 +10,8 @@ export default function MenuDrawer() {
 
     return (
         <div className="flex xl:hidden ml-auto cursor-pointer">
-            <Button onClick={() => setDrawer(true)}>
-                <MenuIcon />
+            <Button onClick={() => setDrawer(true)} sx={{paddingRight: 0}}>
+                <MenuIcon className='ml-auto'/>
             </Button>
             <Drawer anchor={'right'} open={drawer} onClose={() => setDrawer(false)}>
                 <Box sx={{width: 150}}>
